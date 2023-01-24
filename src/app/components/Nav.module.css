@@ -1,0 +1,148 @@
+.header {
+  inset: 0;
+}
+
+.nav {
+  display: flex;
+  padding: 0 140px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(8, 8, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 1) 0%,
+    rgba(33, 33, 33, 1) 14%,
+    rgba(33, 33, 33, 1) 86%,
+    rgba(8, 8, 8, 1) 100%
+  );
+  font-size: 20px;
+  box-shadow: 0 4px 20px -8px black;
+  z-index: 10;
+  margin: 0;
+}
+
+.logo,
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.center-link,
+.right-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(250, 250, 250);
+  border-bottom: 2px solid transparent;
+  align-self: center;
+  padding: 10px 0;
+}
+
+.center-link {
+  padding: 0 20px;
+}
+
+.cart-icon,
+.account-icon,
+.search-icon {
+  filter: invert(1);
+}
+
+.hovered {
+  padding: 10px 20px;
+}
+:hover.wrapper-links .hovered {
+  border-bottom: 2px solid white;
+}
+
+:hover.wrapper-links .latest-sub-nav {
+  display: flex;
+}
+
+.latest-sub-nav {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  right: 140px;
+  padding: 40px;
+  background-color: rgb(20, 20, 20);
+  justify-content: center;
+  width: fit-content;
+  color: rgb(250, 250, 250);
+  gap: 40px;
+  border-radius: 0 0 12px 12px;
+  margin: 0 auto;
+}
+
+.sub {
+  display: inherit;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 10px;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  bottom: 40px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition-duration: 250ms;
+}
+
+:hover.btn {
+  transition-duration: 250ms;
+  color: rgb(15, 15, 15);
+  background-color: rgb(236, 236, 236);
+}
+
+.left,
+.right {
+  display: inherit;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.title-sub,
+.link-sub {
+  text-decoration: none;
+}
+
+.title-sub {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(250, 250, 250);
+}
+
+.link-sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(200, 200, 200);
+  transition-duration: 250ms;
+}
+
+:hover.link-sub {
+  color: rgb(255, 255, 255);
+  transition-duration: 250ms;
+}
+
+.sub-img {
+  border-radius: 12px;
+}
