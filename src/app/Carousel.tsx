@@ -12,7 +12,7 @@ export default function Carousel(): JSX.Element {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect((): any => {
-    let mounted = true;
+    let mounted: boolean = true;
     getCarousel().then((data) => {
       data.forEach((el) => {
         let a: string = pb.getFileUrl(el, el.field);
@@ -25,14 +25,16 @@ export default function Carousel(): JSX.Element {
   }, []);
 
   const slideLeft = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? carousel.length - 1 : currentIndex - 1;
+    const isFirstSlide: boolean = currentIndex === 0;
+    const newIndex: number = isFirstSlide
+      ? carousel.length - 1
+      : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const slideRight = useCallback(() => {
-    const isLastSlide = currentIndex === carousel.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    const isLastSlide: boolean = currentIndex === carousel.length - 1;
+    const newIndex: number = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   }, [currentIndex, carousel]);
 
@@ -51,7 +53,7 @@ export default function Carousel(): JSX.Element {
         <button onClick={slideLeft} className={styles.leftbtn}>
           ←
         </button>
-        {carousel.map((c: string, i: number) => (
+        {carousel.map((_: string, i: number) => (
           <div key={i} className={styles.slide}>
             <div
               className={styles.img}
