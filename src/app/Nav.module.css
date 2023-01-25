@@ -1,5 +1,7 @@
 .header {
-  inset: 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .nav {
@@ -56,9 +58,11 @@
 
 .hovered {
   padding: 10px 20px;
+  transition-duration: 250ms;
 }
 :hover.wrapper-links .hovered {
   border-bottom: 2px solid white;
+  transition-duration: 250ms;
 }
 
 :hover.wrapper-links .latest-sub-nav {

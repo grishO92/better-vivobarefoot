@@ -1,4 +1,4 @@
-import Navigation from './components/Nav'
+import Navigation from './Nav'
 import './globals.css'
 
 
