@@ -39,15 +39,15 @@
   border: 2px solid white;
   color: rgb(240, 240, 240);
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   padding: 18px 20px;
   scale: 0.5;
   cursor: pointer;
   z-index: 10;
 }
 .rightbtn {
-  right: 8%;
+  right: 3%;
 }
 .leftbtn {
-  left: 8%;
+  left: 3%;
 }
