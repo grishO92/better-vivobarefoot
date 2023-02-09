@@ -7,7 +7,7 @@
 
 .content {
   display: flex;
-  /* width: 655px; */
+  width: 655px;
   flex-direction: column;
   gap: 50px;
   align-items: center;
