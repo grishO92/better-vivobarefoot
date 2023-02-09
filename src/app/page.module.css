@@ -2,11 +2,12 @@
   display: flex;
   padding: 0 175px;
   justify-content: space-evenly;
+  background-color: rgb(29, 29, 29);
 }
 
 .content {
   display: flex;
-  width: min-content;
+  /* width: 655px; */
   flex-direction: column;
   gap: 50px;
   align-items: center;
@@ -19,7 +20,8 @@
 .img-wrapper {
   overflow: hidden;
   border-radius: 12px;
-  width: 655px;
+  width: auto;
+  height: 374px;
 }
 
 .img {
@@ -56,5 +58,51 @@
 :hover.btn {
   background-color: white;
   color: black;
+  transition-duration: 450ms;
+}
+
+.vivo-in-use-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  margin: 50px;
+}
+
+.grid {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.grid > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.grid > * > .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid transparent;
+  transition-duration: 450ms;
+}
+.grid > * > :hover.img-wrapper {
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 450ms;
+}
+
+.grid > :hover > .img-wrapper > img {
+  scale: 1.2;
+  transition-duration: 450ms;
+  cursor: pointer;
+}
+
+.grid > * > .img-wrapper > img {
+  scale: 1;
   transition-duration: 450ms;
 }

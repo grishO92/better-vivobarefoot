@@ -44,6 +44,97 @@ export default async function Home() {
           <button className={styles.btn}>FIND OUT MORE</button>
         </article>
       </section>
+      <section className={styles['vivo-in-use-wrapper']}>
+        <h2 className={styles.header}>VIVO IN USE</h2>
+        <div className={styles.grid}>
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-hiking-1_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Hiking</h4>
+          </article>
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-vegan_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Vegan</h4>
+          </article>
+
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-road-running_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Road Running</h4>
+          </article>
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-work_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Work</h4>
+          </article>
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-winterproof_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>All Weather</h4>
+          </article>
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-casual_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Casual</h4>
+          </article>
+
+          <article>
+            <div className={styles['img-wrapper']}>
+              <Image
+                className={styles.img}
+                width={338}
+                height={374}
+                src={'/vivo-use-0821-338x374-trail-running_2.webp'}
+                alt={'mini-banner'}
+              />
+            </div>
+            <h4>Trail Running</h4>
+          </article>
+        </div>
+      </section>
     </div>
   );
 }
