@@ -155,7 +155,7 @@ export default async function Home() {
             wetland spanning the flatlands from the Mendip Hills to the Atlantic
             coast. Sadly, like most of our habitats, the Somerset Levels is a...
           </p>
-          <button className={styles.btn}>FIND OUT MORE</button>
+          {/* <button className={styles.btn}>FIND OUT MORE</button> */}
         </article>
 
         <article className={styles.content}>
@@ -175,7 +175,7 @@ export default async function Home() {
             that both increases your performance as well as protects your long
             term health.
           </p>
-          <button className={styles.btn}>FIND OUT MORE</button>
+          {/* <button className={styles.btn}>FIND OUT MORE</button> */}
         </article>
       </section>
     </div>
