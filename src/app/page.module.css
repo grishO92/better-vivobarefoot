@@ -1,8 +1,32 @@
-.mini-banner {
+.mini-banner,
+.world-of-barefoot {
   display: flex;
-  padding: 0 175px;
+  padding: 50px 175px;
   justify-content: space-evenly;
   background-color: rgb(29, 29, 29);
+}
+.world-of-barefoot {
+  flex-wrap: wrap;
+}
+.world-of-barefoot :first-child {
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.world-of-barefoot > :first-child::before {
+  width: 56px;
+  height: 56px;
+  background-size: contain;
+  vertical-align: middle;
+  position: static;
+  transform: none;
+  content: url('/world-of-barefoot.svg');
+}
+.date {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.459);
 }
 
 .content {
@@ -14,7 +38,7 @@
   justify-content: space-between;
   color: white;
 
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 
 .img-wrapper {
@@ -32,11 +56,14 @@
   border-radius: 12px;
 }
 
-.header {
-  font-size: 30px;
+.header,
+.headerr {
+  font-size: 26px;
+  color: white;
   padding: 0;
   margin: 0;
   line-height: 0;
+  text-align: center;
 }
 
 .description {

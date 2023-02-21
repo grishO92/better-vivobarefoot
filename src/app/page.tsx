@@ -135,6 +135,49 @@ export default async function Home() {
           </article>
         </div>
       </section>
+
+      <section className={styles['world-of-barefoot']}>
+        <h2 className={styles.headerr}>World of Barefoot</h2>
+        <article className={styles.content}>
+          <div className={styles['img-wrapper']}>
+            <Image
+              className={styles.img}
+              width={655}
+              height={433}
+              src={'/Rewilding_Nature.webp'}
+              alt={'mini-banner'}
+            />
+          </div>
+          <h4 className={styles.date}>February 8, 2023</h4>
+          <h3 className={styles.header}>REWILDING NATURE</h3>
+          <p className={styles.description}>
+            The Somerset Levels, in southwest England, was once a vast, wild
+            wetland spanning the flatlands from the Mendip Hills to the Atlantic
+            coast. Sadly, like most of our habitats, the Somerset Levels is a...
+          </p>
+          <button className={styles.btn}>FIND OUT MORE</button>
+        </article>
+
+        <article className={styles.content}>
+          <div className={styles['img-wrapper']}>
+            <Image
+              className={styles.img}
+              width={655}
+              height={433}
+              src={'/Train_Natural_Blog_Desktop_Header_580x390.webp'}
+              alt={'mini-banner'}
+            />
+          </div>
+          <h4 className={styles.date}>January 31, 2023</h4>
+          <h3 className={styles.header}>NATURAL HEALTH AND NATURAL TRAINING</h3>
+          <p className={styles.description}>
+            Discover natural training. Functional, varied and holistic training
+            that both increases your performance as well as protects your long
+            term health.
+          </p>
+          <button className={styles.btn}>FIND OUT MORE</button>
+        </article>
+      </section>
     </div>
   );
 }
