@@ -44,6 +44,7 @@ export default async function Home() {
           <button className={styles.btn}>FIND OUT MORE</button>
         </article>
       </section>
+
       <section className={styles['vivo-in-use-wrapper']}>
         <h2 className={styles.header}>VIVO IN USE</h2>
         <div className={styles.grid}>
